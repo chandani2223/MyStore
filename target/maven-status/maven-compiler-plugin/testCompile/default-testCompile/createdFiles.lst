@@ -1,0 +1,13 @@
+com\PageObject\myAccountPage.class
+com\PageObject\searchProductPage.class
+com\utilities\ReadConfig.class
+com\PageObject\registerAccount.class
+com\PageObject\buyProductPage.class
+com\TestCase\BaseClass.class
+com\TestCase\verifyLogin.class
+com\PageObject\verifyAlreadyRegister.class
+com\TestCase\buyProduct.class
+com\PageObject\SignIn.class
+com\TestCase\searchProduct.class
+com\PageObject\personalInfo.class
+com\TestCase\indexPage.class
