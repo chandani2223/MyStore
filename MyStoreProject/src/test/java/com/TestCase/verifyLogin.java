@@ -13,8 +13,8 @@ public class verifyLogin extends BaseClass {
 		
 		verifyAlreadyRegister var = new verifyAlreadyRegister(driver);
 		var.ClickOnSignInLink();
-		var.registerUName("sidhhi@gmail.com");
-		var.registerPasswrd("sidhhi mirza");
+		var.registerUName("jamana@gmail.com");
+		var.registerPasswrd("jamana mirza");
 		var.clickSubmitSignIn();
 		
 		//register user account

@@ -15,8 +15,8 @@ public class searchProduct extends BaseClass {
 		
 		searchProductPage sp = new searchProductPage(driver);
 		sp.ClickOnSignInLink();
-		sp.registerUName("sidhhi@gmail.com");
-		sp.registerPasswrd("sidhhi mirza");
+		sp.registerUName("jamana@gmail.com");
+		sp.registerPasswrd("jamana mirza");
 		sp.clickSubmitSignIn();
 		sp.entervalueInsearchBar("T-shirts");
 		sp.clickOnsearchBar();

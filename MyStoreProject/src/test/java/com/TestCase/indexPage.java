@@ -17,15 +17,15 @@ public class indexPage extends BaseClass {
 		sc.ClickOnSignInLink();
 
 		myAccountPage ap = new myAccountPage(driver);
-		ap.SendEmail("sidhhi@gmail.com");
+		ap.SendEmail("jamana@gmail.com");
 		ap.ClickOnSubmitButton();
 		
 		//personal information
 		personalInfo pn = new personalInfo(driver);
 		pn.maleGender();
-		pn.firstName("sidhhi");
+		pn.firstName("jamana");
 		pn.lastName("mirza");
-		pn.password("sidhhi mirza");
+		pn.password("jamana mirza");
 		pn.DaysMethod();
 		pn.MonthsMethod();
 		pn.YearsMethod();
