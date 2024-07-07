@@ -3,11 +3,15 @@ package com.utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class ReadConfig {
+import org.apache.log4j.Logger;
 
+import com.TestCase.BaseClass;
+
+public class ReadConfig {
+	
 	Properties pro;
 	String path="C:\\tester\\MyStoreProject\\configuration\\config.properties";
-	
+
 	public ReadConfig() {
 		try {
 			FileInputStream fis = new FileInputStream(path);
@@ -17,7 +21,7 @@ public class ReadConfig {
 			System.out.println(e);
 		}
 	}
-	
+
 	public String getBaseURL() {
 		String url = pro.getProperty("baseURL");
 		if(url!=null) {
@@ -26,7 +30,7 @@ public class ReadConfig {
 			throw new RuntimeException("URL not found in config properties file...");
 		}
 	}
-	
+
 	public String getbrowser() {
 		String browser = pro.getProperty("browser");
 		if(browser!=null) {

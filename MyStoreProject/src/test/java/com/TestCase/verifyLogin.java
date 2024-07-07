@@ -10,7 +10,7 @@ public class verifyLogin extends BaseClass {
 
 	@Test(priority = 2)
 	public void verifylogin() {
-		
+		logger.info("Execute start of verifylogin method...");
 		verifyAlreadyRegister var = new verifyAlreadyRegister(driver);
 		var.ClickOnSignInLink();
 		var.registerUName("jamana@gmail.com");

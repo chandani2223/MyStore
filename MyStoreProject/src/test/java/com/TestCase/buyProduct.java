@@ -9,7 +9,8 @@ public class buyProduct extends BaseClass{
 	
 	@Test(priority = 4)
 	public void BuyProduct() {
-		
+		logger.info("Execute start of BuyProduct method...");
+
 		buyProductPage bpp = new buyProductPage(driver);
 		bpp.hoverWomen();
 		bpp.clickonsubMenuT_shirt();

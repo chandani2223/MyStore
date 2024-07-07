@@ -6,8 +6,8 @@
       <class name="com.TestCase.indexPage">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="VerifyRegister"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.TestCase.indexPage -->
     </classes>

@@ -3,11 +3,32 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.TestCase.verifyLogin">
+        <methods>
+          <include name="verifylogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestCase.verifyLogin -->
+      <class name="com.TestCase.searchProduct">
+        <methods>
+          <include name="serachProducts"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestCase.searchProduct -->
+      <class name="com.TestCase.buyProduct">
+        <methods>
+          <include name="tearDown"/>
+          <include name="BuyProduct"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestCase.buyProduct -->
       <class name="com.TestCase.indexPage">
         <methods>
           <include name="tearDown"/>
-          <include name="VerifyRegister"/>
           <include name="setUp"/>
+          <include name="VerifyRegister"/>
         </methods>
       </class> <!-- com.TestCase.indexPage -->
     </classes>

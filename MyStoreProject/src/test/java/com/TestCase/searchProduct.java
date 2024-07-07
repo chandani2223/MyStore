@@ -12,7 +12,7 @@ public class searchProduct extends BaseClass {
 
 	@Test(priority = 3)
 	public void serachProducts() {
-		
+		logger.info("Execute start of searchProduct method...");
 		searchProductPage sp = new searchProductPage(driver);
 		sp.ClickOnSignInLink();
 		sp.registerUName("jamana@gmail.com");

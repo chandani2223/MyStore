@@ -1,21 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-06T10:26:01 IST" name="Default suite" finished-at="2024-07-06T10:26:23 IST" duration-ms="21912">
+  <suite started-at="2024-07-07T12:49:25 IST" name="Default suite" finished-at="2024-07-07T12:49:39 IST" duration-ms="13945">
     <groups>
     </groups>
-    <test started-at="2024-07-06T10:26:01 IST" name="Default test" finished-at="2024-07-06T10:26:23 IST" duration-ms="21912">
+    <test started-at="2024-07-07T12:49:25 IST" name="Default test" finished-at="2024-07-07T12:49:39 IST" duration-ms="13945">
       <class name="com.TestCase.indexPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.indexPage@78691363]" started-at="2024-07-06T10:26:01 IST" name="setUp" finished-at="2024-07-06T10:26:10 IST" duration-ms="8452" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.indexPage@3315d2d7]" started-at="2024-07-07T12:49:25 IST" name="setUp" finished-at="2024-07-07T12:49:36 IST" duration-ms="11153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyRegister()[pri:1, instance:com.TestCase.indexPage@78691363]" started-at="2024-07-06T10:26:10 IST" name="VerifyRegister" finished-at="2024-07-06T10:26:23 IST" duration-ms="13382" status="PASS">
+        <test-method signature="VerifyRegister()[pri:1, instance:com.TestCase.indexPage@3315d2d7]" started-at="2024-07-07T12:49:36 IST" name="VerifyRegister" finished-at="2024-07-07T12:49:39 IST" duration-ms="2696" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using id=uniform-id_gender1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NMCT7KP', ip: '192.168.67.234', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=uniform-id_gender1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NMCT7KP', ip: '192.168.67.234', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.PageObject.personalInfo.maleGender(personalInfo.java:51)
+at com.TestCase.indexPage.VerifyRegister(indexPage.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRegister -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestCase.indexPage@78691363]" started-at="2024-07-06T10:26:23 IST" name="tearDown" finished-at="2024-07-06T10:26:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestCase.indexPage@3315d2d7]" started-at="2024-07-07T12:49:39 IST" name="tearDown" finished-at="2024-07-07T12:49:39 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
